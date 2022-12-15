@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function smoothScroll(target, duration) {
+            var target = document.querySelector(target);
+            var targetPosition = target.getBoundingClientRect().top;
+            var startPosition = window.pageYOffset;
+            var distance = targetPosition - startPosition;
+            var startTime = null;
+
+            function animation(currentTime) {
+                if (startTime === null) startTime = currentTime;
+                var timeElapsed = currentTime - startTime;
+                var run = ease(timeElapsed, startPosition, distance, duration);
+                window.scrollTo({
+                    top: run,
+                    behavior: "smooth"
+                });
+                if (timeElapsed < duration) requestAnimationFrame(animation);
+            }
+
+            function ease(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return c / 2 * t * t + b;
+                t--;
+                return -c / 2 * (t * (t - 2) - 1) + b;
+            }
+
+            requestAnimationFrame(animation);
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <h1>My Portfolio</h1>
+
+    <!-- Add a menu-->
+    <ul class="menu">
+        <li><a href="#" onclick="smoothScroll('', 1000, true);">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <section class="home" id="home">
+        <h2>Home</h2>
+        <p>Welcome to my portfolio!</p>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About</h2>
+        <p>Here is some information about me:</p>
+        <ul>
+            <li>My name is John Doe</li>
+            <li>I am a web developer</li>
+            <li>I live in New York</li>
+        </ul>
+    </section>
+
+    <!-- Add a section for the portfolio-->
+    <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Here are some of my projects:</p>
+        <ul>
+            <li><a href="#">Project 1</a></li>
+            <li><a href="#">Project 2</a></li>
+            <li><a href="#">Project 3</a></li>
+        </ul>
+    </section>
+
+    <!-- Add a section for the contact form-->
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>Get in touch with me!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+
+</body>
+
+
+</html>
