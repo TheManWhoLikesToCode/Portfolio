@@ -13,7 +13,8 @@ Colors used:
 body {
 
     font-family: "Open Sans", sans-serif;
-    margin: 0;
+    /* Alight the text to the center */
+
 }
 
 .menu {
@@ -28,7 +29,6 @@ h1 {
     /* add some padding to the left of the heading */
     padding-left: 20px;
     text-align: left;
-    margin: 0;
     margin: 10px 0;
     font-size: 36px;
     font-weight: bold;
