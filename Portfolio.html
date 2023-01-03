@@ -1,101 +1,152 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        function smoothScroll(target, duration) {
-            var target = document.querySelector(target);
-            var targetPosition = target.getBoundingClientRect().top;
-            var startPosition = window.pageYOffset;
-            var distance = targetPosition - startPosition;
-            var startTime = null;
+    <head>
+        <title>Jaydin Freeman's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-            function animation(currentTime) {
-                if (startTime === null) startTime = currentTime;
-                var timeElapsed = currentTime - startTime;
-                var run = ease(timeElapsed, startPosition, distance, duration);
-                window.scrollTo({
-                    top: run,
-                    behavior: "smooth"
-                });
-                if (timeElapsed < duration) requestAnimationFrame(animation);
-            }
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#index">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section>
 
-            function ease(t, b, c, d) {
-                t /= d / 2;
-                if (t < 1) return c / 2 * t * t + b;
-                t--;
-                return -c / 2 * (t * (t - 2) - 1) + b;
-            }
+            <div id="index">
+                <div class="wrapper">
+                    <div class="typing-demo-home">
+                        Welcome :)
+                    </div>
+                </div>
+            </div>
 
-            requestAnimationFrame(animation);
-        }
+            <div id="container" style="display: flex; flex-wrap: wrap">
+                <div id="header" style="flex: 50%; box-sizing: border-box;
+                    align-items: center">
+                    <div id="about">
+                        <h1>About Me</h1>
+                        <p align=justify style="background-color:#12232E;
+                            border-radius:10px;
+                            font-size:16px; padding:40px; margin:5%; box-shadow:
+                            0 0 20px rgba(0, 0, 0, 0.5); height: 700px;">
+                            <b>Hi there! My name is Jaydin, and I am currently a
+                                computer science student at kettering
+                                University. In my free time, I enjoy coding,
+                                playing basketball, and cooking. I first
+                                started learning how to code in my freshman year
+                                of college, and since then I have become
+                                proficient in a variety of programming
+                                languages, including Java, Python, Matlab, HTML,
+                                and
+                                CSS. I am excited to continue learning and
+                                growing as a programmer, and to see where my
+                                passion for technology will take me.</b>
+                        </p>
+                    </div>
+                </div>
+                <div style="flex: 30%; box-sizing: border-box; display: flex;
+                    align-items: center">
+                    <img src="HeadShot.jfif" alt="Headshot" width="800"
+                        height="800" style="margin:15%; border-radius:25%;
+                        box-shadow: 0 0
+                        20px rgba(0, 0, 0, 0.5);">
+                </div>
+            </div>
 
-
-
-
-    </script>
-</head>
-
-<body>
-
-    <h1>My Portfolio</h1>
-
-    <!-- Add a menu-->
-    <ul class="menu">
-        <li><a href="#" onclick="smoothScroll('', 1000, true);">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <section class="home" id="home">
-        <h2>Home</h2>
-        <p>Welcome to my portfolio!</p>
-    </section>
-
-    <section class="about" id="about">
-        <h2>About</h2>
-        <p>Here is some information about me:</p>
-        <p>
-            Hi there! My name is Jaydin, and I am currently a computer science student at Kettering University. In my
-            free time, I enjoy coding, playing basketball, and cooking. I first started learning how to code in my
-            freshman year of college, and since then I have become proficient in a variety of programming languages,
-            including Java, Python, Matlab, HTML, and CSS. I am excited to continue learning and growing as a
-            programmer, and to see where my passion for technology will take me.
-        <p>
-    </section>
-
-    <!-- Add a section for the portfolio-->
-    <section class="portfolio" id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Here are some of my projects:</p>
-        <ul>
-            <li><a href="#">Project 1</a></li>
-            <li><a href="#">Project 2</a></li>
-            <li><a href="#">Project 3</a></li>
-        </ul>
-    </section>
-
-    <!-- Add a section for the contact form-->
-    <section class="contact" id="contact">
-        <h2>Contact</h2>
-        <p>Get in touch with me!</p>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-            <input type="submit" value="Submit">
-        </form>
-    </section>
+            <div id="portfolio">
+                <h1>Portfolio</h1>
+                <div style="background-color:#12232E; border-radius:10px;
+                    font-size:16px; padding:20px; margin:5%; box-shadow: 0 0
+                    20px rgba(0, 0, 0, 0.5);">
+                    <h2>Readability Readability Checker</h2>
+                    <p>Introducing Readability Checker - the ultimate tool for
+                        anyone looking to improve the clarity and
+                        readability of their writing. With our app, you can
+                        easily check the readability score of any essay
+                        or document, and get detailed feedback on how to improve
+                        it. Simply copy and paste your text into
+                        our app, and we'll analyze it using industry-standard
+                        readability formulas. You'll get a score that
+                        tells you how easy your writing is to understand, and
+                        specific recommendations on how to make it
+                        more readable.
+                    </p>
+                </div>
+            </div>
 
 
-</body>
+            <div id="contact">
+                <h1>Contact</h1>
+                <div style="display: flex; height: 500px;">
+                    <div style="background-color:#12232E; border-radius:10px;
+                        font-size:16px; padding:25px; margin:5%; box-shadow: 0 0
+                        20px rgba(0, 0, 0, 0.5); display: flex; justify-content:
+                        center; align-items: center; flex: 1;">
+                        <b>Thank you for visiting my website. Your time is
+                            greatly appreciated. If you have any questions or
+                            need further assistance, please do not hesitate to
+                            reach out. I am here to assist you in any way
+                            possible my email is JaydinFreemanWork@gmail.com.
+                            Thank you again for stopping by.</b>
+                    </div>
+                    <div style="background-color:#12232E; border-radius:10px;
+                        font-size:16px; padding:20px; margin:5%; box-shadow: 0 0
+                        20px rgba(0, 0, 0, 0.5); display: flex; justify-content:
+                        center; align-items: center; flex: 1;">
+                        <div style="display: flex; flex-direction: column;
+                            align-items: center;">
+                            <a
+                                href="https://www.linkedin.com/in/jaydin-freeman/"
+                                target="_blank">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                                    alt="LinkedIn logo" style="height: 100px;
+                                    margin-bottom: 10px;">
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/jaydin-freeman/"
+                                target="_blank">My LinkedIn</a>
+                        </div>
+                        <div style="display: flex; flex-direction: column;
+                            align-items: center; margin-left: 20px;">
+                            <a href="https://github.com/TheManWhoLikesToCode"
+                                target="_blank">
+                                <img
+                                    src="GitHub_Logo_White.png"
+                                    alt="GitHub logo" style="height: 100px;
+                                    margin-bottom: 10px;">
+                            </a>
+                            <a href="https://github.com/TheManWhoLikesToCode"
+                                target="_blank">My GitHub</a>
+                        </div>
+                        <div style="display: flex; flex-direction: column;
+                            align-items: center; margin-left: 20px;">
+                            <a href="mailto:JaydinFreemanWork@gmail.com"
+                                target="_blank">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png"
+                                    alt="Gmail logo" style="height: 100px;
+                                    margin-bottom: 10px;">
+                            </a>
+                            <a href="mailto:JaydinFreemanWork@gmail.com"
+                                target="_blank">My Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+
+        <footer>
+            <p>Created by Jaydin Freeman</p>
+        </footer>
+
+
+    </body>
 
 </html>
