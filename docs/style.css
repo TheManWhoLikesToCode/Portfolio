@@ -15,6 +15,22 @@ nav {
   position: fixed;
   top: 0;
 }
+#job-description {
+  padding: 5px;
+}
+
+#job-description ul {
+  list-style: none;
+  padding: 15px;
+  }
+  
+  #job-description li {
+  margin: 10px 0;
+  }
+  
+  #job-description p {
+  margin: 20px 0;
+  }
 
 ul {
   padding: 0;
@@ -22,7 +38,7 @@ ul {
   list-style: none;
 }
 
-li {
+nav li {
   float: left;
   padding: 20px;
   color: #eefbfb;
@@ -32,6 +48,7 @@ li {
   letter-spacing: 2px;
   list-style: none;
 }
+
 
 li a {
   color: #eefbfb;
