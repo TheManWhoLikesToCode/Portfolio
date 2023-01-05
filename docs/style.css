@@ -113,9 +113,11 @@ body {
 
 b1 {
   font-size: 2em;
+  margin: auto;
   font-weight: 400;
   color: #eefbfb;
-  justify-content: center;
+  text-align: center;
+
 }
 
 b2 {
