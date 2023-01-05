@@ -2,18 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-}
-
 nav {
   width: 100%;
   background: #12232e;
   overflow: hidden;
   position: fixed;
   top: 0;
+  z-index: 2;
 }
 #job-description {
   padding: 5px;
@@ -22,15 +17,15 @@ nav {
 #job-description ul {
   list-style: none;
   padding: 15px;
-  }
-  
-  #job-description li {
+}
+
+#job-description li {
   margin: 10px 0;
-  }
-  
-  #job-description p {
+}
+
+#job-description p {
   margin: 20px 0;
-  }
+}
 
 ul {
   padding: 0;
@@ -42,27 +37,21 @@ nav li {
   float: left;
   padding: 20px;
   color: #eefbfb;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 2px;
   list-style: none;
 }
 
-
 li a {
   color: #eefbfb;
+  font-size: 1.5em;
   text-decoration: none;
 }
 
 section {
   background: linear-gradient(to top, #007cc7, #12232e);
-}
-
-box {
-  position: relative;
-  top: 15ch;
-  left: 25ch;
 }
 
 a:hover {
@@ -72,24 +61,8 @@ a:hover {
 #index {
   color: #eefbfb;
   display: inline-block;
-  width: 100%;
+  width: auto;
   height: 100vh;
-}
-
-#about {
-  height: 700px;
-  color: #eefbfb;
-  display: inline-block;
-  width: 100%;
-  height: 100vh;
-  font-size: 1.5em;
-}
-
-b {
-  font-size: 1.5em;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-align: left;
 }
 
 #portfolio {
@@ -97,17 +70,16 @@ b {
   font-size: 1.5em;
   color: #eefbfb;
   display: inline-block;
-  width: 100%;
-  height: 100vh;
+  width: auto;
+  height: auto;
 }
 
 #contact {
-  height: 700px;
+  height: 75vh;
   font-size: 1.5em;
   color: #eefbfb;
   display: inline-block;
-  width: 100%;
-  height: 100vh;
+  width: auto;
 }
 
 h1 {
@@ -117,6 +89,27 @@ h1 {
   color: #eefbfb;
   padding-top: 50px;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+b1 {
+  font-size: 2.5vw;
+  font-weight: 400;
+  color: #eefbfb;
+  text-align: left;
+}
+
+b2 {
+  font-size: 1em;
+  font-weight: 300;
+  color: #eefbfb;
+  text-align: left;
+}
+
 
 footer {
   background: #12232e;
@@ -137,8 +130,8 @@ footer {
   -ms-transform: translateY(-50%, -50%);
   transform: translateY(-50%, -50%);
   /*This part is important for centering*/
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .typing-demo-home {
@@ -150,6 +143,8 @@ footer {
   border-right: 3px solid;
   font-family: "Poppins", sans-serif;
   font-size: 7em;
+  margin: auto -175px;
+  z-index: 1;
 }
 
 @keyframes typing {
