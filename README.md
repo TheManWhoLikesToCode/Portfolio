@@ -1,2 +1,9 @@
-# Portfolio
-Hi there! My name is Jaydin and I am a junior at Kettering University, where I am studying computer science with a concentration in artificial intelligence. I am very passionate about using technology to solve problems and make a positive impact in the world. In my free time, I enjoy staying up to date with the latest developments in the field and learning new programming languages and frameworks. On my Github portfolio, you can find a selection of projects that showcase my skills and experiences in the field of computer science. Thank you for visiting my page and I hope you find something interesting!
+## Description
+
+Hello! I'm Jaydin Freeman and welcome to the first edition of my portfolio website. This space serves as a high-level overview of my journey in computer science, featuring my projects and work experiences. The website is crafted using HTML, CSS, and JS for a simple and elegant user experience.
+
+Navigate through four key sections - Home, About, Portfolio, and Contact. In "About", learn briefly about my background. "Portfolio" showcases my projects and work experiences, including a highlight on the "BlackBoard Scrapper" project and my stint at BorgWarner. For getting in touch, you’ll find my email in the "Contact" section.
+
+Also, connect with me on LinkedIn and GitHub through links in the navigation bar.
+
+Thank you for stopping by!
