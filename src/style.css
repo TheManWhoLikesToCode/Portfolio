@@ -1,0 +1,168 @@
+/* Global Styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f0f0;
+  color: #2c3e50;
+  scroll-behavior: smooth;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #2c3e50;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  transition: all 0.3s;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  padding: 20px;
+  font-size: 1em;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: background 0.3s;
+}
+
+nav li:hover {
+  background: #34495e;
+}
+nav li a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.social-icon {
+  height: 30px;
+  margin-right: 20px;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Section Styles */
+section {
+  padding: 100px 0;
+}
+
+/* Index Page Styles */
+#index {
+  background: linear-gradient(to top, #2980b9, #2c3e50);
+  min-height: calc(100vh - 60px);
+  position: relative;
+  color: #ecf0f1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.explore-button {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.explore-button:hover {
+  background: #34495e;
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+/* Other Page Styles */
+#about-me,
+#contact,
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#header p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #2c3e50;
+}
+b1 {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #2c3e50;
+}
+
+/* Footer Styles */
+footer {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Typing Animation */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
