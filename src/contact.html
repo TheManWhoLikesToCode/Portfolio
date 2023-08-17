@@ -16,7 +16,7 @@
         </ul>
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/jaydin-freeman/" target="_blank">
-                <img src="assets/GitHub_Logo_White.png" alt="LinkedIn logo" class="social-icon">
+                <img src="assets/Linkedin_logo.png" alt="LinkedIn logo" class="social-icon">
             </a>
             <a href="https://github.com/TheManWhoLikesToCode" target="_blank">
                 <img src="assets/GitHub_Logo_White.png" alt="GitHub logo" class="social-icon">
@@ -25,8 +25,24 @@
     </nav>
     <section id="contact">
         <h1>Contact</h1>
-        <div>
-            <b1>Thank you for visiting my website. Your time is greatly appreciated. If you have any questions or need further assistance, please do not hesitate to reach out. I am here to assist you in any way possible. My email is JaydinFreemanWork@gmail.com.</b1>
+        <div class="contact-container">
+            <div class="contact-info">
+                <b1>I'm glad you stopped by! Whether you have a question, a project in mind, or just want to say hello,
+                    I'd love to hear from you.
+                </b1>
+            </div>
+            <form action="https://formspree.io/f/xknljdgg" method="POST" class="contact-form">
+                <label>
+                    Your email:
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message" required></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>
         </div>
     </section>
     <footer>
