@@ -1,0 +1,37 @@
+{
+    "configurations": [
+        {
+            "name": "Python: DEFAULT Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "autoReload": {
+                "enable": true
+            },
+            "justMyCode": false
+        },
+        {
+            "name": "Python: Behave current file",
+            "type": "python",
+            "request": "launch",
+            "module": "behave",
+            "console": "integratedTerminal",
+            "args": [
+                "${file}"
+            ]
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/docs/about.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/docs/about.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/docs/portfolio.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/docs/portfolio.html"
+        }
+    ]
+}
